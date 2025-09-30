@@ -15,14 +15,14 @@ public class FeeController {
 
 	@Autowired
 	private FeeService feeService;
-	
+
 	@GetMapping("/get_fee_structure")
 	public FeeStructureResponse getFeeStructure(@RequestParam String classLevel) throws Exception {
 		return feeService.getFeeStructure(classLevel);
 	}
-	
+
 	@GetMapping("/payment_history")
-	public String getPaymentHistory(@RequestParam Long studentId,@RequestParam String academic_year) {
+	public String getPaymentHistory(@RequestParam Long studentId, @RequestParam String academic_year) {
 		return null;
 	}
 
